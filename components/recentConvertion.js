@@ -174,6 +174,11 @@ export default function recentConvertion() {
       }
 
       if (input.checkValidity()) convertBtn.removeAttribute("disabled");
+
+      if(listContainer.childElementCount === 1){
+        emptyText.style.display = "block";
+        emptyText.innerHTML = "No recent convertion";
+      }
       
     }
   }
